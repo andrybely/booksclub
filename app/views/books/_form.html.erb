@@ -21,7 +21,8 @@
   </div>
   <div class="field">
     <%= f.label :year %><br>
-    <%= f.datetime_select :year %>
+    <%= f.date_select :year, discard_day:true, discard_month:true, end_year:Date.today.year,
+                      start_year:Date.today.year - 500 %>
   </div>
   <div class="field">
     <%= f.label :picture %><br>
