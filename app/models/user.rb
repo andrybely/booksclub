@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   # имя юзера должно быть, и не длиннее 35 букв
   validates :name, presence: true, length: {maximum: 35}
 
-  has_many :user_books
-  has_many :comments
-  has_many :rates
+  #has_many :user_books
+  #has_many :comments
+  #has_many :rate
 end
