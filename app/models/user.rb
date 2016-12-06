@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  ratyrate_rater
+
   # имя юзера должно быть, и не длиннее 35 букв
   validates :name, presence: true, length: {maximum: 35}
 

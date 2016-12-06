@@ -1,6 +1,8 @@
 class Book < ActiveRecord::Base
 
 
+  ratyrate_rateable #"author"
+
   belongs_to :user
   #has_many :comments, dependent: destroy
 
