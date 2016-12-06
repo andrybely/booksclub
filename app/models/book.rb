@@ -9,7 +9,7 @@ class Book < ActiveRecord::Base
   validates :title, presence: true, length: {maximum: 50}
   validates :author, presence: true, length: {maximum: 30}
   validates :picture, presence: true
-  validates :description, presence: true, length: {maximum: 255}
+  validates :description, presence: true, length: {minimum: 50, maximum: 500}
   validates :genre, presence: true
 
 end
