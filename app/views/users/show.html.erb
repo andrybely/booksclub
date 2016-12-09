@@ -15,5 +15,10 @@
   <%= @user.photo %>
 </p>
 
+<p>
+  <strong>Books:</strong>
+  <%= books_count(@user.books_users.user_id)%>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', user_path %>
