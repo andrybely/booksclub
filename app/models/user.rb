@@ -4,8 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :books_users
-  has_many :books, through: :books_users
+  has_many :user_books
+  has_many :books, through: :user_books
 
   ratyrate_rater
 

@@ -17,7 +17,7 @@
 
 <p>
   <strong>Books:</strong>
-  <%= books_count(@user.books_users.user_id)%>
+  <%= @user.books.count %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

@@ -3,7 +3,7 @@ class Book < ActiveRecord::Base
 
   ratyrate_rateable #"author"
 
-  belongs_to :books_user
+
   #has_many :comments, dependent: destroy
 
   validates :title, presence: true, length: {maximum: 50}
